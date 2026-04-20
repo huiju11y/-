@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 基础练习作业</title>
+</head>
+<body>
+    <h1>我的 JavaScript 基础练习</h1>
+    <p>请按 F12 打开浏览器控制台查看输出结果</p>
+
+    <script>
+        // ========== 1. 变量的定义 ==========
+        let userName = "小明";
+        const age = 20;
+        var isStudent = true;
+
+        console.log("=== 1. 变量定义 ===");
+        console.log("姓名：", userName);
+        console.log("年龄：", age);
+        console.log("是否是学生：", isStudent);
+
+        // ========== 2. 变量类型 ==========
+        console.log("\n=== 2. 变量类型 ===");
+        console.log("userName 类型：", typeof userName); // string
+        console.log("age 类型：", typeof age); // number
+        console.log("isStudent 类型：", typeof isStudent); // boolean
+        console.log("空值类型：", typeof null); // object
+
+        // ========== 3. 表达式 ==========
+        let a = 10;
+        let b = 3;
+        console.log("\n=== 3. 表达式运算 ===");
+        console.log("a + b =", a + b);
+        console.log("a - b =", a - b);
+        console.log("a * b =", a * b);
+        console.log("a / b =", a / b);
+        console.log("a % b =", a % b);
+
+        // ========== 4. 流程控制 ==========
+        console.log("\n=== 4. 流程控制 ===");
+        // if-else
+        if (age >= 18) {
+            console.log("你已经成年了");
+        } else {
+            console.log("你还未成年");
+        }
+
+        // for 循环
+        console.log("for 循环 1-5：");
+        for (let i = 1; i <= 5; i++) {
+            console.log(i);
+        }
+
+        // ========== 5. 函数 ==========
+        console.log("\n=== 5. 函数练习 ===");
+        function add(x, y) {
+            return x + y;
+        }
+
+        function sayHello(name) {
+            console.log("Hello, " + name + "!");
+        }
+
+        console.log("add(5, 7) =", add(5, 7));
+        sayHello(userName);
+    </script>
+</body>
+</html>
